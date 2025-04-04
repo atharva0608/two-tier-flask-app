@@ -17,7 +17,7 @@ pipeline {
                     echo 'Running docker compose up with rebuild...'
                     // Navigate to the project directory and run docker-compose with --build flag
                     dir('two-tier-flask-app') {
-                        sh 'docker compose down && docker compose up -d --build'
+                        sh 'docker compose up -d --build'
                     }
                 }
             }
